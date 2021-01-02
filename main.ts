@@ -1,8 +1,16 @@
-let kph = 0
-let mph = 0
+input.onButtonPressed(Button.A, function () {
+    basic.showNumber(kph)
+    basic.showString("kph")
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showNumber(mph)
+    basic.showString("mph")
+})
 let mps = 0
 let distance2 = 0
 let distance1 = 0
+let mph = 0
+let kph = 0
 let button_released = 1
 basic.forever(function () {
     if (button_released == 0 && pins.digitalReadPin(DigitalPin.P0) == 0) {
@@ -27,6 +35,5 @@ basic.forever(function () {
         kph = mps * 3.6
         basic.showNumber(mph)
         basic.showString("mph")
-        basic.clearScreen()
     }
 })
