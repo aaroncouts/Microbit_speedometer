@@ -1,3 +1,14 @@
+This program requires a BBC Micro:bit wired with the following:
+ 1. An external normally-open button that, when pressed, routes VCC to pin 0.
+ 2. A distance sensor (RCWL-1602 recommended) with trigger on pin 1 and echo on pin 2.
+ 
+To use, point the distance sensor at something that is leaving (such as someone running away from you) or approaching (such as someone running toward you, or at a wall you are walking toward.  Hit the external button to take a speed reading.
+
+The speed in miles per hour will display on the microbit's LED display.
+
+After taking a reading, button A on the microbit will show the speed in kilometers per hour.  Button B will show the miles per hour again.
+
+
 
 > Open this page at [https://aaroncouts.github.io/microbit_speedometer/](https://aaroncouts.github.io/microbit_speedometer/)
 
